@@ -42,7 +42,7 @@ public class SecurityConfig {
     public CorsFilter corsFilter() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://localhost:5500","https://studentpanel-sw-dm.onrender.com"));
+        config.setAllowedOrigins(List.of("http://localhost:5500","https://studentpanel-sw-dm.onrender.com","https://studentpanel-front.onrender.com"));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true);
