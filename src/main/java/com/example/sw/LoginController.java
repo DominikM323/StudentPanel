@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:5500")
+@CrossOrigin(origins = {"http://localhost:5500","https://studentpanel-sw-dm.onrender.com"})
 @RestController
 @RequestMapping("/api/auth")
 public class LoginController {
